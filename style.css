@@ -374,6 +374,76 @@ body{
     border: none;
 }
 
+.checkbox-hiden{
+    display: none;
+}
+
+.checkbox-hiden:checked + label::before {
+    height: 11px;
+    width: 11px;
+    border: 1px solid white;
+    background-color: #2c71b8;
+}
+
+label::before{
+    float: left;
+    display: block;
+    content: "";
+    height: 13px;
+    width: 13px;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.filter-padding{
+    margin-left: 25px;
+    margin-top: 25px;
+    color: white;
+    font-size: 21px;
+}
+
+.filter-titles{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.checkbox-padding{
+    padding-top: 15px;
+}
+
+.more-option-margin{
+    text-decoration: none;
+    color: white;
+    margin-top: 25px;
+}
+
+.more-option-margin:hover{
+    color: #2c71b8;
+}
+
+.filter-btn-submit{
+    height: 50px;
+    width: 210px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #2c71b8;
+    color: white;
+    border: none;
+}
+
+.filter-btn-submit:hover{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    color: #2c71b8;
+    border: 1px solid #2c71b8;
+}
+
+
+
+
+
 
 
 
