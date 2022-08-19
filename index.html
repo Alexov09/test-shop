@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/39233928d6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reset.css">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -56,7 +60,9 @@
                         <div class="col-md-9">
                             <form action="" class="search">
                                 <input class="input-search" type="text" placeholder="Search">
-                                <button class="button-search"><img src="img/search.png" alt=""></button>
+                                <button class="button-search">
+                                    <img src="img/search.png" alt="">
+                                </button>
                             </form>
                         </div>
                         <div class="col-md-3">
@@ -64,7 +70,7 @@
                                 <a  href="">
                                     <img class="shop-cart-icon" src="img/shop-cart_blue.png" alt="">
                                 </a>
-                                <div class="count-products">4</div>
+                                <div class="count-products" id="count-products">0</div>
                             </div>
                         </div>
                     </div>
@@ -72,11 +78,18 @@
             </div>
         </div>
     </header>
-    <div class="slider">
-
-    </div>
+    >
     <main class="main">
         <div class="container">
+            <div class="row">
+                <div class="slider">
+                    <div class="slider-block">
+                        <div class="slider-item">Slider 1</div>
+                        <div class="slider-item">Slider 2</div>
+                        <div class="slider-item">Slider 3</div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-3 filter">
                     <div class="device-type filter-padding"> 
@@ -171,7 +184,45 @@
                                         <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
                                     </div>
                                     <div class="fokus-like_border-bot fokus-like_btn">
-                                        <img class="product_absolute-bot" src="img/blue-like.png" alt="">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="device-name">#1 Divice Name</div>
+                                    <div class="info-text">Lorem ipsum dolor sit 
+                                        <br> amet consectetur 
+                                        <br> adipisicing elit.
+                                    </div>
+                                    <div class="tech-info">
+                                        <ul>
+                                            <li><strong>TYPE:</strong> Laptop</li>
+                                            <li><strong>SCREEN SIZE:</strong> 7 inches</li>
+                                            <li><strong>RAM:</strong> 1GB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price-details">
+                                    <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
+                                    <button class="price-btn details_btn"  type="button">More details</button>
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
+                                        <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product_item">
+                                <div class="photo-product"> 
+                                    <img class="product_absolute-main" src="img/monitor.png" alt="">
+                                    <div class="fokus-like_border">
+                                        <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
+                                    </div>
+                                    <div class="fokus-like_border-bot fokus-like_btn">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
                                     </div>
                                 </div>
                                 <div class="info">
@@ -191,8 +242,52 @@
                                 </div>
                                 <div class="price-details">
                                     <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
                                     <button class="price-btn details_btn"  type="button">More details</button>
-                                    <button class="price-btn shop-cart_btn"  type="button">Add to cart
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
+                                        <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product_item">
+                                <div class="photo-product"> 
+                                    <img class="product_absolute-main" src="img/monitor.png" alt="">
+                                    <div class="fokus-like_border">
+                                        <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
+                                    </div>
+                                    <div class="fokus-like_border-bot fokus-like_btn">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="device-name">#1 Divice Name</div>
+                                    <div class="info-text">Lorem ipsum dolor sit 
+                                        <br> amet consectetur 
+                                        <br> adipisicing elit.
+                                    </div>
+                                    <div class="tech-info">
+                                        <ul>
+                                            <li><strong>TYPE:</strong> Laptop</li>
+                                            <li><strong>SCREEN SIZE:</strong> 7 inches</li>
+                                            <li><strong>RAM:</strong> 1GB</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="price-details">
+                                    <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
+                                    <button class="price-btn details_btn"  type="button">More details</button>
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
                                         <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
                                     </button>
                                 </div>
@@ -206,7 +301,7 @@
                                         <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
                                     </div>
                                     <div class="fokus-like_border-bot fokus-like_btn">
-                                        <img class="product_absolute-bot" src="img/blue-like.png" alt="">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
                                     </div>
                                 </div>
                                 <div class="info">
@@ -226,8 +321,91 @@
                                 </div>
                                 <div class="price-details">
                                     <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
                                     <button class="price-btn details_btn"  type="button">More details</button>
-                                    <button class="price-btn shop-cart_btn"  type="button">Add to cart
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
+                                        <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product_item">
+                                <div class="photo-product"> 
+                                    <img class="product_absolute-main" src="img/monitor.png" alt="">
+                                    <div class="fokus-like_border">
+                                        <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
+                                    </div>
+                                    <div class="fokus-like_border-bot fokus-like_btn">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="device-name">#1 Divice Name</div>
+                                    <div class="info-text">Lorem ipsum dolor sit 
+                                        <br> amet consectetur 
+                                        <br> adipisicing elit.
+                                    </div>
+                                    <div class="tech-info">
+                                        <ul>
+                                            <li><strong>TYPE:</strong> Laptop</li>
+                                            <li><strong>SCREEN SIZE:</strong> 7 inches</li>
+                                            <li><strong>RAM:</strong> 1GB</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="price-details">
+                                    <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
+                                    <button class="price-btn details_btn"  type="button">More details</button>
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
+                                        <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product_item">
+                                <div class="photo-product"> 
+                                    <img class="product_absolute-main" src="img/monitor.png" alt="">
+                                    <div class="fokus-like_border">
+                                        <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
+                                    </div>
+                                    <div class="fokus-like_border-bot fokus-like_btn">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="device-name">#1 Divice Name</div>
+                                    <div class="info-text">Lorem ipsum dolor sit 
+                                        <br> amet consectetur 
+                                        <br> adipisicing elit.
+                                    </div>
+                                    <div class="tech-info">
+                                        <ul>
+                                            <li><strong>TYPE:</strong> Laptop</li>
+                                            <li><strong>SCREEN SIZE:</strong> 7 inches</li>
+                                            <li><strong>RAM:</strong> 1GB</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="price-details">
+                                    <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
+                                    <button class="price-btn details_btn"  type="button">More details</button>
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
                                         <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
                                     </button>
                                 </div>
@@ -241,7 +419,7 @@
                                         <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
                                     </div>
                                     <div class="fokus-like_border-bot fokus-like_btn">
-                                        <img class="product_absolute-bot" src="img/blue-like.png" alt="">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
                                     </div>
                                 </div>
                                 <div class="info">
@@ -261,8 +439,91 @@
                                 </div>
                                 <div class="price-details">
                                     <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
                                     <button class="price-btn details_btn"  type="button">More details</button>
-                                    <button class="price-btn shop-cart_btn"  type="button">Add to cart
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
+                                        <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product_item">
+                                <div class="photo-product"> 
+                                    <img class="product_absolute-main" src="img/monitor.png" alt="">
+                                    <div class="fokus-like_border">
+                                        <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
+                                    </div>
+                                    <div class="fokus-like_border-bot fokus-like_btn">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="device-name">#1 Divice Name</div>
+                                    <div class="info-text">Lorem ipsum dolor sit 
+                                        <br> amet consectetur 
+                                        <br> adipisicing elit.
+                                    </div>
+                                    <div class="tech-info">
+                                        <ul>
+                                            <li><strong>TYPE:</strong> Laptop</li>
+                                            <li><strong>SCREEN SIZE:</strong> 7 inches</li>
+                                            <li><strong>RAM:</strong> 1GB</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="price-details">
+                                    <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
+                                    <button class="price-btn details_btn"  type="button">More details</button>
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
+                                        <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product_item">
+                                <div class="photo-product"> 
+                                    <img class="product_absolute-main" src="img/monitor.png" alt="">
+                                    <div class="fokus-like_border">
+                                        <img class="product_absolute-top fokus-like_btn" src="img/blue-fokus.png" alt="">
+                                    </div>
+                                    <div class="fokus-like_border-bot fokus-like_btn ">
+                                        <img class="product_absolute-bot like-item" src="img/blue-like.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="device-name">#1 Divice Name</div>
+                                    <div class="info-text">Lorem ipsum dolor sit 
+                                        <br> amet consectetur 
+                                        <br> adipisicing elit.
+                                    </div>
+                                    <div class="tech-info">
+                                        <ul>
+                                            <li><strong>TYPE:</strong> Laptop</li>
+                                            <li><strong>SCREEN SIZE:</strong> 7 inches</li>
+                                            <li><strong>RAM:</strong> 1GB</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="price-details">
+                                    <div class="price">$599<span class="cents">25</span></div>
+                                    <div class="product-quantity">
+                                        <button class="quantity-btn decrement-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="quantity-btn increment-btn">+</button>
+                                    </div>
+                                    <button class="price-btn details_btn"  type="button">More details</button>
+                                    <button class="price-btn shop-cart_btn add-to-cart"  type="button">Add to cart
                                         <img class="price_shopcart-icon" src="img/shop-cart_white.png" alt="">
                                     </button>
                                 </div>
@@ -274,5 +535,28 @@
         </div>
     </main>
 
+
+
+    <div id="modal" class="modal">
+        <div class="modal-block">
+            <form>
+                <div class="btn-close">X</div>
+                <h3>Please call for more details</h3>
+                <div class="form-fields">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-fields" placeholder="Your phone">
+                    <input type="text">
+                </div>
+                <button>Please call</button>
+            </form>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

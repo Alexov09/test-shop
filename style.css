@@ -192,10 +192,16 @@ body{
     color: white;
 }
 
-.slider{
+.slider-block > div{
+    text-align: center;
+    padding: 150px 0;
+    font-size: 50px;
+    color: white;
+}
 
-    height: 400px;
-    border-bottom: 1.5px solid white;
+.slick-dots li.slick-active button::before{
+    color: red;
+    font-size: 10px;
 }
 
 .filter{
@@ -303,7 +309,7 @@ body{
 }
 
 .product_item{
-    height: 652px;
+    height: 700px;
     width: 270px;
     border: 1px solid white;
 }
@@ -327,6 +333,29 @@ body{
     font-weight: bold;
 }
 
+.product-quantity{
+    margin-top: 10px;
+}
+.product-quantity input{
+    width: 50px;
+    text-align: center;
+    font-size: 17px;
+}
+.quantity-btn{
+    width: 27px;
+    height: 27px;
+    font-size: 20px;
+    background-color: #2c71b8;
+    color: white;
+    border: 1px solid white;
+}
+.quantity-btn:hover{
+    background-color: white;
+    border: #2c71b8 solid 1px;
+    color: #2c71b8;
+}
+
+
 .price-details{
     text-align: center;
 }
@@ -347,6 +376,10 @@ body{
     width: 210px;
     font-size: 21px;
     font-weight: bold;
+}
+
+.liked{
+    background-color: #2c71b8;
 }
 
 .details_btn{
@@ -440,6 +473,46 @@ label::before{
     border: 1px solid #2c71b8;
 }
 
+
+.modal{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4); 
+   z-index: 100;
+   display: none;
+}
+
+.modal-visible{
+    display: block;
+}
+
+.modal-block{
+    width: 300px;
+    margin: 80px auto;
+    height: 200px;
+    border: 1px solid grey;
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+
+.form-fields{
+    margin: 10px 0;
+}
+
+.form-fields input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+.btn-close{
+    text-align: right;
+    cursor: pointer;
+}
 
 
 
